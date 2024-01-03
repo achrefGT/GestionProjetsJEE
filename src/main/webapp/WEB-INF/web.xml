@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd https://jakarta.ee/xml/ns/jakartaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.4">
+  <display-name>gestionProjets</display-name>
+	  <servlet>
+	  	<servlet-name>cps</servlet-name>
+	  	<servlet-class>com.gestionProjets.controleurs.ControleurProjectServlet</servlet-class>
+	  </servlet>
+	  <servlet>
+	  	<servlet-name>cts</servlet-name>
+	  	<servlet-class>com.gestionProjets.controleurs.ControleurTaskServlet</servlet-class>
+	  </servlet>
+	  <servlet>
+	  	<servlet-name>cs</servlet-name>
+	  	<servlet-class>com.gestionProjets.controleurs.ControleurServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	  	<servlet-name>cps</servlet-name>
+	  	<url-pattern>/projectController</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	  	<servlet-name>cts</servlet-name>
+	  	<url-pattern>/taskController</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	  	<servlet-name>cs</servlet-name>
+	  	<url-pattern>/controller</url-pattern>
+	  </servlet-mapping>
+  
+</web-app>
